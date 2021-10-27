@@ -59,12 +59,12 @@ const PictureUpload = ({ postImgObj, setPostImgObj }) => {
         {!!imgFile ? (
           <PostImg previewUrl={postImgObj?.picUrl} isError={isImageError} />
         ) : (
-          <SvgIcon sx={{height:"200px", width:"200px"}} htmlColor="">
+          <SvgIcon sx={{height:"150px", width:"150px"}} htmlColor="">
             <PlaceHolder fill="#d4d7d9"/>
           </SvgIcon>
         )}
         <Button
-          sx={{ height: 35, marginBottom: 3 }}
+          sx={{ height: 35, marginBottom: 1}}
           size="small"
           variant="outlined"
           onClick={() => imgRef.current.click()}
@@ -98,8 +98,8 @@ const PostImg = styled(Box)`
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
 `;
 

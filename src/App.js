@@ -134,7 +134,7 @@ function App() {
       <Container maxWidth="lg">
         <NavBar toggleMenu={toggleMenu} />
         <Box sx={{ margin: "48px auto" }}>
-          <Grid sx={{ marginTop: "100px" }} container spacing={2}>
+          <Grid sx={{ marginTop: "75px" }} container spacing={2}>
             <Grid item sm={12} md={7}>
               {!posts.length ? (
                 <Box
